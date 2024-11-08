@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef5ff; /* Light pinkish background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff85a1; /* Light pink */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add your background image styling here */
+.header {
+    background-image: url('../images/header-background.jpg'); /* Path to the image */
+    background-size: cover; /* Ensures the background covers the entire element */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust as needed */
+    color: white; /* Optional: sets text color for readability */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffb6c1; /* Softer pink */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff69b4; /* Hot pink */
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hero-image:hover {
+    transform: scale(1.03);
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff69b4;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1493; /* Deep pink */
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff85a1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, form, .hero-image {
+    animation: fadeIn 0.8s ease-in-out;
+}
